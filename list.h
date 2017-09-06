@@ -1,12 +1,16 @@
 
-struct list {
-	struct list* next;
-	char** ch;
+struct node {
+  struct node *next;
+  char *ch;
 };
 
-struct list* create_list( );
-int add_to_list(struct list** ll, char* item);
-char* remove_from_list(struct list** ll);
-void print_list(struct list *ll);
-void flush_list(struct list* ll);
-void free_list(struct list *ll);
+typedef struct {
+  struct node *head;
+} list;
+
+list* create_list();
+int add_to_list(list* ll, char* item);
+char* remove_from_list(list* ll);
+void print_list(list *ll);
+void flush_list(list *ll);
+void free_list(list *ll);
