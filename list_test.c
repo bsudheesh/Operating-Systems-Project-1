@@ -17,6 +17,7 @@ int main() {
 	printf("\n\t\t-----> Printing after adding <-----\n");
 	print_list(head);
 	//testing to see if the function complains when NULL is passed as character and list
+	printf("\n\t\t-----> Testing if add_to_list complains when trying to add NULL <-----\n");
 	value = add_to_list(head, testing);
 	value = add_to_list(NULL, testing);
 
@@ -76,6 +77,6 @@ int main() {
 	value = add_to_list(head, thirdCharacter);
 	printf("\n\t\t-----> Printing after reinitialising head and adding <-----\n");
 	print_list(head);
-	printf("\n\n");
+	printf("\n############################### DONE!!!! ###############################\n");
 	return 0;
 }
